@@ -1,0 +1,17 @@
+{
+  "name": "vue-components",
+  "version": "1.0.0",
+  "description": "an set of vue components,include vue-select,vue-layer and so on.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "keywords": [
+    "vue",
+    "componets",
+    "select",
+    "layer"
+  ],
+  "author": "djh",
+  "license": "ISC"
+}
