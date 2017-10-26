@@ -1,0 +1,338 @@
+
+
+/* CSS reset */
+html{
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, fieldset, legend, input, textarea, blockquote, img { margin: 0; padding: 0; }
+body {
+
+  font-family: Helvetica, Tahoma, Arial,"Microsoft YaHei", "微软雅黑",  STXihei, "华文细黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+  font-size: 14px;
+  color: #666;
+  background: #f3f5f8;
+}
+input, select, textarea { font-family: Tahoma, Helvetica, Arial, "微软雅黑" , "\5b8b\4f53", sans-serif; color: #222; outline-style: none;}
+//select { appearance: none; -webkit-appearance: none;}
+dl, ul, li, dt, dd { list-style: none; }
+em, b, i, strong { font-style: normal; font-weight: normal; }
+img { max-width: 100%; border: none; vertical-align: middle; }
+h1, h2, h3, h5, h6 { font-weight: bold; color: #333; }
+h4{font-weight: normal;}
+input::-moz-focus-inner { padding: 0; }
+input, select, textarea { outline-style: none; resize: none; }
+button { outline: none;border: none;}
+header, section, article, aside, footer { display: block; }
+ul,ol {list-style: none;margin: 0;padding: 0;}
+table{border-collapse:collapse;border-spacing:0}
+figure {margin: 0;}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/*
+移除chrome输入框的黄色背景
+*/
+input:-webkit-autofill {
+-webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+border: none !important;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+a {color: #666;text-decoration: none;}
+//------------------------------------- animation keyframes-----------------------------//
+
+@-webkit-keyframes popOut{
+  0% {
+    -webkit-transform: scale(1,1);
+       -moz-transform: scale(1,1);
+            transform: scale(1,1);
+  }
+  25% {
+    -webkit-transform: scale(1,1.2);
+       -moz-transform: scale(1,1.2);
+            transform: scale(1,1.2);
+  }
+  50% {
+    -webkit-transform: scale(1,1.4);
+       -moz-transform: scale(1,1.4);
+            transform: scale(1,1.4);
+  }
+  100% {
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+@keyframes popOut{
+  0% {
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+  25% {
+    -webkit-transform: scale(1,1.2);
+    -moz-transform: scale(1,1.2);
+    transform: scale(1,1.2);
+  }
+  50% {
+    -webkit-transform: scale(1,1.4);
+    -moz-transform: scale(1,1.4);
+    transform: scale(1,1.4);
+  }
+  100% {
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+@-webkit-keyframes popIn{
+  0% {
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+  25% {
+    -webkit-transform: scale(1,1.2);
+    -moz-transform: scale(1,1.2);
+    transform: scale(1,1.2);
+  }
+  50% {
+    -webkit-transform: scale(1,1.4);
+    -moz-transform: scale(1,1.4);
+    transform: scale(1,1.4);
+  }
+  100% {
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+@keyframes popIn{
+  0% {
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+  25% {
+    -webkit-transform: scale(1,1.2);
+    -moz-transform: scale(1,1.2);
+    transform: scale(1,1.2);
+  }
+  50% {
+    -webkit-transform: scale(1,1.4);
+    -moz-transform: scale(1,1.4);
+    transform: scale(1,1.4);
+  }
+  100% {
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+
+//字体颜色
+.black{color:#333 !important;}
+.gray{color: #999 !important;}
+.white{color: #fff !important;}
+.red{color:#f60 !important;}
+.blue{color:#009bff !important;}
+.green{color:#32cd99 !important;}
+.yellow {color: #ffdb84 !important;}
+.orange {color: #f6aa61 !important;}
+
+//.ql-picker-item[data-value="2"]::before {content: '标题 2' !important;}
+
+//common css
+.max-w {max-width:1200px;min-width: 1200px;margin: 0 auto;}
+.clearfix {*zoom:1;}
+.clearfix:after {content: "";display: block;clear:both;}
+.ib {display: inline-block;}
+.fl {float: left;}
+.fr {float: right;}
+.tc {text-align: center;}
+.fw_b {font-weight: bold;}
+.noborder {border: none;}
+.hidden {visibility: hidden;}
+.none {display: none;}
+.ellipsis {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+h2 {font-size: 22px;}
+
+.link1 {color: #999;cursor: pointer;
+  &.active,
+  &:hover {color: darken(#ff7a19,0.5);}
+}
+.link2 {color: #ff7a19;cursor: pointer;
+  &.active,
+  &:hover {color: darken(#ff7a19,0.5);}
+}
+.link3 {color: #2c81ff;cursor: pointer;
+  &.active,
+  &:hover {color: darken(#2c81ff,0.5);}
+}
+
+// 公共组件
+//angle
+.tri_angle {display: inline-block;width: 6px;height: 6px;border: 1px solid ;border-color: #999 #999 transparent transparent;}
+.tri_angle.down {transform:rotate(-45deg);}
+.tri_angle.up {transform:rotate(135deg);vertical-align: top;}
+
+
+
+
+//--------------------------------------公共btn-----------------------------//
+
+.btn {padding: 5px 15px;color: #fff;border-radius: 20px;cursor: pointer;transition: all 0.15s ease-in;text-align: center;
+  &.btn-default {border: 1px solid rgb(102, 102, 102);color: #666;}
+  &.btn-light {border: 1px solid #ececec;color: #666;}
+  &.btn-del{background-color:#bbb;}
+  &.btn-orange {
+    
+    background-image: linear-gradient( 0deg, rgb(255,172,0) 0%, rgb(255,120,26) 100%);    
+  
+  &:hover {box-shadow: 0px 4px 8px 0px rgba(255, 120, 26, 0.3);}
+  }
+  &.btn-blue {
+  
+   background-image: linear-gradient(to top, rgb(116,172,255) 0%, rgb(63,128,226) 100%);
+   &:hover {box-shadow: 0px 4px 8px 0px rgba(62, 128, 226, 0.3);}
+   
+  }
+  &.btn-upload {width: 80px;margin-left: auto;margin-right: auto;border: 1px solid #ececec;color: #666;}
+}
+a.btn {display: inline-block;min-width: 56px;} 
+button.btn {min-width: 86px;}
+.btn-group{
+  .btn {margin-right: 15px;}
+}
+//--------------------------------------css 组件----------------------------------//
+
+.css-checkbox {position: relative;display: inline-block;width: 18px;height: 18px;vertical-align: top;
+  input {position: absolute;top:0;left:0;width: 100%;height: 100%;z-index: 9;opacity:0;}
+  span{margin-right: 5px;
+    &:before {content:"";display: inline-block;width: 16px;height: 16px;border: 1px solid #c3c3c3;border-radius: 3px;vertical-align: middle;}
+    &:after {content: "";position: absolute;left: 3px;top: 5px;width: 8px;height: 4px;display: inline-block;border-width: 2px;border-style: solid;border-color: transparent transparent  #2c81ff #2c81ff;
+      -webkit-transform:rotate(-45deg);
+      -ms-transform:rotate(-45deg);
+      transform:rotate(-45deg);
+      visibility: hidden;
+    }
+  }
+  input:hover+span:after {visibility: visible;}
+  input:checked+span{
+    &:before {background:#2c81ff;border-color: #2c81ff;}
+    &:after {border-color: transparent transparent  #fff #fff;visibility: visible;}
+  }
+
+}
+.css-switch{position: relative;display: inline-block;width: 36px;height: 22px;
+  input {position: absolute;top:0;left:0;width: 100%;height: 100%;z-index: 9;opacity:0;}
+  span {
+    &:before {content:"";display: block;height: 22px;border-radius: 13px;background: #ccc;}
+    &:after {content:"";display: block;position: absolute;left:0px;top:1px;width: 18px;height: 18px;border-radius: 100%;background: #fff;border: 1px solid #c3c3c3; transition: margin-left ease-in-out 0.1s;
+
+    }
+  }
+  input:checked+span{
+    &:before {
+      background-image: -ms-linear-gradient( 0deg, rgb(255,172,0) 0%, rgb(255,122,25) 100%);
+      background-image: -moz-linear-gradient( 0deg, rgb(255,172,0) 0%, rgb(255,122,25) 100%);
+      background-image: -webkit-linear-gradient( 0deg, rgb(255,172,0) 0%, rgb(255,122,25) 100%);
+      background-image: linear-gradient( 0deg, rgb(255,172,0) 0%, rgb(255,122,25) 100%);
+      
+    }
+    &:after {margin-left: 16px;border-color: rgb(255,172,0);
+      -webkit-animation: popIn ease-in 0.3s;
+      animation: popIn ease-in 0.3s;
+    }
+  }
+  input:not(:checked)+span {
+    &:after {
+      -webkit-animation: popOut ease-in 0.3s;
+      animation: popOut ease-in 0.3s;
+    }
+  }
+
+  input:disabled+span {opacity: 0.5}
+}
+
+
+//======================= 表单 ====================//
+.form-inline {
+  .form-control {display: inline-block;margin-left: 15px;}
+  .label {margin-right: 5px;color: #666;}
+  .input {width: 85px;padding: 7px 10px 7px 5px;}
+  .search-bar {display: inline-block;border: 1px solid #ececec;
+    .input{width: 135px;border: none;}
+    .search-btn {padding: 7px 15px;background: #f5f5f5;border-left: 1px solid #ececec;cursor: pointer;}
+  }
+}
+.form-block {
+  .form-row {margin-bottom: 20px;
+    .label,
+    .label-required {float: left;width: 138px;margin-top: 6px;text-align: right;}
+      font-size: 20px;
+      .label-required:before {content: '*';display: inline-block;margin-right: 3px;color: #ff7a19;}
+    .cont {margin-left: 170px;
+      .input {width: 348px;padding: 7px 10px;border: 1px solid #e6e6e6;}
+      .error {padding: 5px 0 0 10px;color: #f60;}
+    }
+  }
+  .css-select {border-color: #e6e6e6;}
+  .form-head {margin-bottom: 35px;
+    .title {font-size: 22px;color: #333;font-weight: normal;}
+  }
+}
+
+
