@@ -55,6 +55,7 @@ this.$layer.msg({
     cont:'哈哈你点击了确定'
 });
 ```
+and the detail you can read the [readme](src/components/layer/README.md) in path  `components/layer`.
 
 
 
