@@ -31,7 +31,7 @@ $ajax({
 后端返回json {code:'000',msg:'',data:''}
 code解释：000 成功 | 001 失败 | 002 未登录
 */
-import $layer from 'component/layer';
+import $layer from 'components/layer';
 
 var $ajax = (opt) => {
     

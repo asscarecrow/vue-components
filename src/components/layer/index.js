@@ -184,13 +184,14 @@ appLayer.newInstance = props =>{
                 this.onCancel();
             },
             remove () {
-                setTimeout(() => {
-                    this.destroy();
-                }, 0);
+                var id = this.id;
+                this.destroy(id);
             },
-            destroy () {
+            destroy (id) {
                 try {
-                    document.body.removeChild(this.$el);
+                    var elId = 'layer-'+id;
+                    var ele = document.getElementById(elId);
+                    document.body.removeChild(ele);
                 
                 }catch(e){
 
@@ -260,7 +261,8 @@ function layerInit(props){
     };
     layerInstance.show(data[1]);//修改实例的个别参数
     layerId++;
-    return data[0].id;
+    //return data[0].id;
+    return Vue;
 }
 
 appLayer.load=function(props={}){

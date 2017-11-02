@@ -1,6 +1,6 @@
 <template>
 <div class="wrap">
-    <a href="">github 源码地址</a>
+    <a href="https://github.com/MorePainMoreGain/vue-components" target="_blank">github 源码地址</a>
 <h2>first: drawdown select</h2>
 	   sex：<app-select
             :list='list1'
@@ -18,7 +18,20 @@
        <li> your sex is: {{singleSelect}}</li>
        <li> your interest is: {{multiTxt}}</li>
     </ul>
+
+<h2>second: layer component</h2>
+    <a class='btn btn-default' @click='layerShow=true'>组件弹窗</a>
+    <app-layer 
+        title='提示'
+        v-model='layerShow'
+        @onYes = 'layerOk'
+        @onCancel = 'layerCancel'
+    ><div slot='cont'>
+        请选择您的性别：<app-select :list='list1'></app-select>
+    </div>
+    </app-layer>
 </div>
+
 </template>
 
 <script>
@@ -45,6 +58,7 @@ const appSelect = r => require.ensure([], () => r(require("components/appSelect"
                 multiSelect:"",
                 multiVal:"",
                 sigleVal:2,
+                layerShow:false,
                 
             }
         },
@@ -67,7 +81,24 @@ const appSelect = r => require.ensure([], () => r(require("components/appSelect"
             },
             multiChange(data){
                 this.multiSelect = data;
+            },
+            layerOk(){
+                this.layerShow=false;
+                this.$layer.msg({
+                    cont:'哈哈你点击了确定'
+                });
+            },
+            layerCancel(){
+                this.$layer.alert({
+                    title:'警告',
+                    cont:'您点击了取消哦!!',
+                    onCancel:function(){
+                        //alert('好吧');
+                        this.$layer.alert({cont:'好吧'});
+                    }
+                })
             }
+            
         }
   	}
 

@@ -45,7 +45,7 @@ time: 默认是2000
 4. info
 `this.$layer.info([title,cont,btns,shadow,onCancel])`
 5. alert
-`this.$layer.alert([title,cont,btns,shadow,onYes,onCancel])`
+`this.$layer.alert([title,cont,btns,shadow,onCancel])`
 6. confirm
 `this.$layer.confirm([title,cont,btns,shadow,onYes,onCancel])`
 7. close 
@@ -57,4 +57,8 @@ this.$layer.close(id);
 8. closeAll([type]) 
 如果有type则根据type关闭某一类layer;
 `this.$layer.closeAll('loading')`;
+
+## TODO
+1. 关闭一类弹窗时同时打开这一类弹窗。(done)
+
 

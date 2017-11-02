@@ -8,7 +8,7 @@
                     <h2 class='title' v-if="title" v-html='title'></h2>
                 </slot>
             </div>
-            <div class='close-btn' v-if="showCloseBtn" @click='cancel'></div>
+            <div class='close-btn' v-if="showCloseBtn" @click='close'></div>
             <slot>
                 <div class='layer-body' >
                     <slot name='cont'><div class='layer-cont' v-html='cont'></div></slot>
