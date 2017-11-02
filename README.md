@@ -18,4 +18,43 @@ download the file,clone the `appSelect.vue`  from the folder `src/components/`,t
 ></app-select>
 ```
 
+## 二、 layer
+#### Feature
+* 
+
+#### Basic Usage
+The best to using is to extend the Vue prototype and components.
+
+```javascript
+import appLayer from 'components/layer';
+// first: extend Vue
+Vue.use({
+    install:function(Vue,option){
+        Vue.prototype.$layer = appLayer;
+        Vue.component('appLayer',appLayer);
+    }
+    
+});
+```
+So it can be called both prototype function and Instance. 
+```html
+<template>
+    <app-layer 
+        title='提示'
+        v-model='layerShow'
+        @onYes = 'layerOk'
+        @onCancel = 'layerCancel'
+    ><div slot='cont'>
+        请选择您的性别：<app-select :list='list1'></app-select>
+    </div>
+    </app-layer>
+</template>
+```
+```javascript
+this.$layer.msg({
+    cont:'哈哈你点击了确定'
+});
+```
+
+
 
