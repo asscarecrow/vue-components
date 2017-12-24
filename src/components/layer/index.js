@@ -174,6 +174,7 @@ appLayer.newInstance = props =>{
                 this.visible = false;
                 this.remove();
                 this.$emit('input', false);
+                this.onClose();
             },
             yes(){
                 this.close();
@@ -201,6 +202,7 @@ appLayer.newInstance = props =>{
             onRemove(){},
             onYes(){},
             onCancel(){},
+            onClose() { }
         }
     })
     // end new Vue

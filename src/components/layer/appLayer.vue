@@ -129,6 +129,7 @@ export default {
         close(){
             this.visible = false;
             this.$emit('input', false);
+            this.$emit('onClose');
         },
         ok(){
             //this.visible=false;

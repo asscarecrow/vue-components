@@ -20,7 +20,8 @@ download the file,clone the `appSelect.vue`  from the folder `src/components/`,t
 
 ## 二、 layer
 #### Feature
-* 
+* simple 
+* support called both by vue components and instance.
 
 #### Basic Usage
 The best to using is to extend the Vue prototype and components.
