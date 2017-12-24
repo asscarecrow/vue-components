@@ -263,8 +263,8 @@ function layerInit(props){
     };
     layerInstance.show(data[1]);//修改实例的个别参数
     layerId++;
-    //return data[0].id;
-    return Vue;
+    return data[0].id;
+    //return Vue;
 }
 
 appLayer.load=function(props={}){
