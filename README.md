@@ -58,5 +58,27 @@ this.$layer.msg({
 ```
 and the detail you can read the [readme](src/components/layer/README.md) in path  `components/layer`.
 
+## 三、directives
+collecting some useful directives
 
+#### 3.1 clickousize
+get the response when user click outsize the DOM.
+
+**usage**
+```javascript
+// step1
+import {clickoutsize} from 'asset/js/directives';
+
+// step2
+export default {
+    directives:{clickoutsize},
+    methods: {
+        outsize() {
+          // ... 
+        }
+    }
+}
+// step3
+<div id='mydom' v-clickoutsize='outsize' ></div>
+```
 

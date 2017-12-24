@@ -59,7 +59,5 @@ this.$layer.close(id);
 如果有type则根据type关闭某一类layer;
 `this.$layer.closeAll('loading')`;
 
-## TODO
-1. 关闭一类弹窗时同时打开这一类弹窗。(done)
 
 
